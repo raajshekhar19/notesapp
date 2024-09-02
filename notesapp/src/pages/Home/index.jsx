@@ -5,8 +5,12 @@ export const Home = () => {
   return (
     <>
       <Navbar />
-      <main>
-      <Sidebar />
+      <main className="flex gap-3">
+        <Sidebar />
+        <div>
+          <input placeholder="Enter the Title" />
+          <textarea placeholder="Enter the Text" />
+        </div>
       </main>
     </>
   );

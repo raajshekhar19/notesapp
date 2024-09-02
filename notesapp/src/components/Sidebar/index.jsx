@@ -3,9 +3,7 @@ import { NavLink } from "react-router-dom";
 export const Sidebar = () => {
   const getStyles = ({ isActive }) => {
     const styles = "flex align-center gap-1 px-2 py-1 rounded-tr-full rounded-br-full";
-    return isActive
-      ? `hover:bg-indigo-800 hover:text-slate-50 ${styles}`
-      : `text-slate-50 bg-indigo-800 ${styles}`;
+    return isActive? `bg-indigo-800 text-white ${styles}`: `hover:bg-indigo-800 hover:text-white	  ${styles}`;
   };
 
   return (
